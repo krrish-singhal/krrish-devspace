@@ -5,10 +5,9 @@ import {
   Mail,
   ExternalLink,
   Download,
-  Apple as WhatsApp,
+  MessageCircle as WhatsApp,
 } from "lucide-react";
 import { Link } from "react-router-dom";
-
 
 function Footer() {
   const socialLinks = [
@@ -36,17 +35,18 @@ function Footer() {
               Looking for my Resume?
             </h3>
             <p className="text-gray-400 mb-6">
-              Download my resume to learn more about my experience, skills, and
+              View my resume to learn more about my experience, skills, and
               achievements. I'm always open to new opportunities and
               collaborations.
             </p>
             <a
-              href="/Krrish_Resume.pdf"
-              download="Krrish_Singhal_Resume.pdf"
+              href="https://drive.google.com/file/d/1Q8b1nJQjsdIig7cfi8wCtjbpDlEk5aJ0/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all duration-300 text-white"
             >
               <Download className="h-5 w-5 mr-2" />
-              Download Resume
+              View Resume
             </a>
           </div>
 

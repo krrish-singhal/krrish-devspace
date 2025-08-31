@@ -1,26 +1,30 @@
-import { GraduationCap, Code2, Users, Rocket, Lightbulb, Book, Trophy } from "lucide-react";
+import { GraduationCap, Code2, Users, Rocket, Lightbulb } from "lucide-react";
 
 function About() {
   const features = [
     {
       icon: Code2,
       title: "Full Stack Development",
-      description: "Expertise in React, Next.js, Node, Express, MongoDB, and scalable architectures for production-quality apps.",
+      description:
+        "Expertise in React, Next.js, Node, Express, MongoDB, and scalable architectures for production-quality apps.",
     },
     {
       icon: Users,
       title: "Collaboration & Leadership",
-      description: "Led technical teams in hackathons, successful in coding contests, and delivered complex features collaboratively.",
+      description:
+        "Led technical teams in hackathons, successful in coding contests, and delivered complex features collaboratively.",
     },
     {
       icon: Rocket,
       title: "Innovation",
-      description: "Solves real-world problems by designing robust, maintainable and creative digital solutions.",
+      description:
+        "Solves real-world problems by designing robust, maintainable and creative digital solutions.",
     },
     {
       icon: Lightbulb,
       title: "Continuous Growth",
-      description: "Stays up-to-date with new technologies, always improving UX/UI, performance, and code quality.",
+      description:
+        "Stays up-to-date with new technologies, always improving UX/UI, performance, and code quality.",
     },
   ];
 
@@ -49,6 +53,7 @@ function About() {
             </div>
           </div>
         </div>
+
         {/* About Me Content */}
         <div className="flex-1">
           <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 mb-6">
@@ -56,23 +61,37 @@ function About() {
           </h2>
           <div className="prose prose-invert max-w-none">
             <p className="text-gray-300 text-base leading-relaxed mb-4">
-              I'm Krrish, a passionate Full Stack Developer skilled in the MERN stack and modern frameworks like Next.js. My journey started with curiosity and grew into delivering robust, scalable client and enterprise solutions. Practical leadership, continuous learning, and a love for clean, impactful design drive me to turn innovative ideas into successful products.
+              I'm Krrish, a passionate Full Stack Developer skilled in the MERN
+              stack and modern frameworks like Next.js. My journey started with
+              curiosity and grew into delivering robust, scalable client and
+              enterprise solutions. Practical leadership, continuous learning,
+              and a love for clean, impactful design drive me to turn innovative
+              ideas into successful products.
             </p>
             <p className="text-gray-300 text-base leading-relaxed mb-4">
-              I continuously develop my problem-solving skills through hackathons, coding contests, and collaboration in technical clubs. From e-commerce platforms to intelligent SaaS tools, my work reflects a blend of strong engineering and user-centric design.
+              I continuously develop my problem-solving skills through
+              hackathons, coding contests, and collaboration in technical clubs.
+              From e-commerce platforms to intelligent SaaS tools, my work
+              reflects a blend of strong engineering and user-centric design.
             </p>
             <p className="text-gray-300 text-base leading-relaxed mb-4">
-              Beyond coding, I mentor, contribute to the community, and stay sharp on current trends—ensuring every project delivers top-tier user experience with modern best practices.
+              Beyond coding, I mentor, contribute to the community, and stay
+              sharp on current trends—ensuring every project delivers top-tier
+              user experience with modern best practices.
             </p>
           </div>
+
           <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-5">
+            {/* Google Drive Resume Link */}
             <a
-              href="/Krrish_Resume.pdf"
-              download="Krrish_Singhal_Resume.pdf"
+              href="https://drive.google.com/file/d/1Q8b1nJQjsdIig7cfi8wCtjbpDlEk5aJ0/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-300 text-lg text-white font-medium shadow-lg gap-2"
             >
-              <span>Download CV</span>
+              <span>View Resume</span>
             </a>
+
             <a
               href="https://leetcode.com/u/Krrish_Singhal/"
               target="_blank"
@@ -80,9 +99,9 @@ function About() {
               className="inline-flex items-center px-5 py-3 bg-yellow-400 hover:bg-yellow-500 text-black rounded-lg text-sm font-semibold gap-2 transition-all duration-200 shadow-md"
               title="View my LeetCode profile"
             >
-              
               LeetCode
             </a>
+
             <a
               href="https://www.geeksforgeeks.org/user/krrishsiw00l/"
               target="_blank"
@@ -90,12 +109,12 @@ function About() {
               className="inline-flex items-center px-5 py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg text-sm font-semibold gap-2 transition-all duration-200 shadow-md"
               title="View my GeeksforGeeks profile"
             >
-              
               GFG
             </a>
           </div>
         </div>
       </div>
+
       {/* Features */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-20">
         {features.map((feature, index) => (
