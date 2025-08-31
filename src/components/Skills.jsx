@@ -9,15 +9,16 @@ function Skills() {
         { name: "CSS3", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" },
         { name: "JavaScript", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" },
         { name: "React.js", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" },
-        { name: "Typescript", icon: "https://static-00.iconduck.com/assets.00/file-type-typescript-official-icon-256x256-aavrgmi0.png" },
-        { name: "Tailwind CSS", icon: "https://tse4.mm.bing.net/th/id/OIP._6ooq0R60ba3UT5c-QVemAHaDm?rs=1&pid=ImgDetMain" }
+        { name: "Next.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
+        { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
+        { name: "Tailwind CSS", icon: "https://th.bing.com/th/id/OIP.pEeKeUoENMqoN-kR8f8XoQHaFj?w=224&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" }
       ]
     },
     {
       title: "Backend Development",
       skills: [
         { name: "Node.js", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" },
-        { name: "Express.js", icon: "https://tse1.mm.bing.net/th/id/OIP.1fZjQpkRMKTBGN_7H5YnFwHaGL?rs=1&pid=ImgDetMain" }
+        { name: "Express.js", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg" }
       ]
     },
     {
@@ -31,7 +32,8 @@ function Skills() {
       title: "Programming Languages",
       skills: [
         { name: "Python", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" },
-        { name: "C", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" }
+        { name: "C", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" },
+        { name: "Java", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" }
       ]
     }
   ];
@@ -40,28 +42,22 @@ function Skills() {
     <section id="skills" className="py-20 bg-gray-800">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 mb-4">
+          <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 mb-8">
             Technical Expertise
           </h2>
-          <p className="text-gray-300 text-lg">
-            As a passionate problem solver and dedicated full-stack developer, I bring a comprehensive skill set to transform ideas into robust, scalable solutions. My expertise spans across modern web technologies and best practices in software development.
+          <p className="text-gray-300 text-lg max-w-xl mx-auto">
+            As a passionate problem solver and dedicated full-stack developer, I bring a comprehensive skill set to transform ideas into robust, scalable solutions. My expertise spans modern technologies and best practices in software development.
           </p>
         </div>
 
-        {/* Skills Grid */}
         <div className="space-y-16">
           {skillCategories.map((category, index) => (
             <div key={index}>
-              <h3 className="text-2xl font-semibold text-purple-400 mb-6">
-                {category.title}
-              </h3>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-                {category.skills.map((skill, skillIndex) => (
-                  <div
-                    key={skillIndex}
-                    className="bg-gray-900 rounded-xl p-4 flex flex-col items-center justify-center hover:bg-gray-800 transition-all duration-300"
-                  >
-                    <img src={skill.icon} alt={skill.name} className="w-12 h-12 mb-3" />
+              <h3 className="text-2xl font-semibold text-purple-400 mb-6">{category.title}</h3>
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
+                {category.skills.map((skill, idx) => (
+                  <div key={idx} className="bg-gray-900 rounded-xl p-6 flex flex-col items-center justify-center hover:bg-gray-800 transition-all duration-300">
+                    <img src={skill.icon} alt={skill.name} className="w-16 h-16 mb-4" />
                     <span className="text-gray-300 text-sm font-medium">{skill.name}</span>
                   </div>
                 ))}

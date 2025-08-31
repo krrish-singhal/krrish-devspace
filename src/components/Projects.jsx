@@ -1,103 +1,124 @@
-import { Github, ExternalLink, Globe, Code2, Database, Server, Cpu, Cloud, Bot, ShoppingCart } from 'lucide-react';
+import { Github, ExternalLink, ShoppingCart } from 'lucide-react';
+import SwiftMart from '../assets/image.png';
+import Taskify from '../assets/Taskify.png';
+import CravingCart from '../assets/Craving_cart_image.png'
+
+const projects = [
+  {
+    title: "Swift Mart",
+    description:
+      "Full-featured e-commerce platform (MERN): including authentication, admin dashboard, cart management, product catalog, OLX marketplace, Cloudinary uploads, and a mystery box feature.",
+    image: SwiftMart,
+    technologies: ["MongoDB", "Express.js", "React", "Node.js", "Cloudinary"],
+    github: "https://github.com/krrish-singhal/Swift-Mart", // Replace with actual link
+    
+    icon: ShoppingCart,
+  },
+  {
+    title: "Taskify",
+    description:
+      "A productivity application for managing and categorizing tasks (To-Do, In Progress, Done); features authentication, editing, persistent storage, and clean dashboard.",
+    image: Taskify,
+    technologies: ["MERN", "JWT", "MongoDB"],
+    github: "https://github.com/krrish-singhal/Taskify",
+    live: "https://taskify-142w85e2t-krrish-singhals-projects.vercel.app", // Demo link
+    icon: Github,
+  },
+  {
+    title: "Plan and Go",
+    description:
+      "Next.js + TypeScript intelligent trip planner: unified trip entry, automated cab/train/flight booking, hotel selection, bundled lodging/meals, optional expert guides, and more.",
+    image: "https://images.pexels.com/photos/21014/pexels-photo.jpg",
+    technologies: ["Next.js", "TypeScript", "API Integration"],
+    github: "https://github.com/krrish-singhal/PlanAndGo", // Replace with actual link
+    live: "https://krrish-devspace.vercel.app", // Replace with actual live/demo
+    icon: ExternalLink,
+  },
+  {
+    title: "Craving Cart",
+    description:
+      "A feature-rich e-commerce cart built with Next.js and JavaScript. Includes seamless browsing, cart management, authentication, and a dynamic checkout process.",
+    image: CravingCart,
+    technologies: ["Next.js", "JavaScript"],
+    github: "https://github.com/krrish-singhal/craving-cart",
+    live: "https://craving-cart.vercel.app/",
+    icon: ShoppingCart,
+  },
+  {
+    title: "Orbix",
+    description:
+      "A unique ride-hailing app (MERN): real-time ride booking, fare calculation, OTP verification, maps integration, various vehicle types, secure payment, and in-cab food ordering.",
+    image: "https://images.pexels.com/photos/386025/pexels-photo-386025.jpeg",
+    technologies: ["MongoDB", "Express", "React", "Node.js", "Payment Gateway"],
+    github: "https://github.com/krrish-singhal/Orbix",
+    live: "https://krrish-devspace.vercel.app",
+    icon: ExternalLink,
+  },
+  {
+    title: "Blogify",
+    description:
+      "Modern blogging app (React + Appwrite): Markdown support, user authentication, fast rendering with real-time data sync and fully responsive clean UI.",
+    image: "https://i.imgur.com/lRN48vo.png",
+    technologies: ["React", "Appwrite", "Markdown"],
+    github: "https://github.com/krrish-singhal/Blog_With_Blofify.git",
+    live: "https://blog-with-blofify.vercel.app/",
+    icon: Github,
+  },
+];
 
 function Projects() {
-  const projects = [
-    {
-      title: "Blogging Platform",
-      description: "Full-stack blogging solution with modern features",
-      image: "https://i.imgur.com/lRN48vo.png",
-      technologies: ["React", "Appwrite Backend"],
-      github: "https://github.com/krrish-singhal/Blog_With_Blofify.git",
-      live: "https://blog-with-blofify.vercel.app/",
-      icon: ShoppingCart,
-    },
-    {
-      title: "Todo with local Storage",
-      description: "Manage todos but in a way that let you to complete that ",
-      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1000",
-      technologies: ["React.js", "Redux Toolkit"],
-      github: "https://github.com/krrish-singhal/Your_Todo",
-      live: "https://your-todo-three.vercel.app/",
-      icon: Code2
-    },
-    {
-      title: "Weather Dashboard",
-      description: "See what is going to be the weather anywhere of today and upcoming days",
-      image: "https://media.istockphoto.com/id/477902875/photo/weather-forecast-on-a-digital-display.jpg?s=1024x1024&w=is&k=20&c=dh6G856Z1WFRE8S-qq_SnO0gR4qVCLcF5ROxxLbm2EI=",
-      technologies: ["HTML", "CSS", "Javascript"],
-      github: "https://github.com/krrish-singhal/Weather_App",
-      live: "https://weather-app-mu-henna-17.vercel.app/",
-      icon: Bot
-    }
-  ];
-
   return (
     <section id="projects" className="py-20 bg-gray-900">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 mb-4">
-            Featured Projects
+            My Projects
           </h2>
           <p className="text-gray-300 text-sm">
-            A showcase of my technical expertise and creative problem-solving
+            A showcase of full-stack applications blending engineering and creativity.
           </p>
         </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((project, index) => (
-            <div
-              key={index}
-              className="bg-gray-800/50 rounded-lg overflow-hidden hover:bg-gray-800 transition-all duration-300"
-            >
-              <div className="relative h-48 overflow-hidden">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, idx) => (
+            <div key={idx} className="bg-gray-800/70 rounded-xl overflow-hidden hover:shadow-2xl hover:bg-gray-800 transition-all duration-300">
+              <div className="relative h-56 overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent" />
-                <div className="absolute top-3 right-3 bg-gray-900/80 p-2 rounded-full">
-                  <project.icon className="h-4 w-4 text-purple-400" />
+                <div className="absolute top-2 right-2 bg-gray-900/80 p-2 rounded-full">
+                  <project.icon className="h-5 w-5 text-purple-400" />
                 </div>
               </div>
-
-              <div className="p-4">
-                <h3 className="text-lg font-semibold text-white mb-2">
-                  {project.title}
-                </h3>
-                <p className="text-gray-400 text-sm mb-3">
-                  {project.description}
-                </p>
-
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-white mb-2">{project.title}</h3>
+                <p className="text-gray-400 text-sm mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {project.technologies.map((tech, techIndex) => (
-                    <span
-                      key={techIndex}
-                      className="px-2 py-1 bg-purple-500/20 text-purple-400 rounded-full text-xs"
-                    >
+                  {project.technologies.map((tech, i) => (
+                    <span key={i} className="px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-xs">
                       {tech}
                     </span>
                   ))}
                 </div>
-
-                <div className="flex justify-between items-center">
+                <div className="flex justify-between items-center gap-2">
                   <a
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1 px-3 py-1.5 bg-gray-700 rounded-lg text-sm text-white hover:bg-gray-600 transition-colors"
+                    className="flex items-center gap-1 px-3 py-2 bg-gray-700 rounded-lg text-sm text-white hover:bg-gray-600 transition-colors"
                   >
                     <Github className="h-4 w-4" />
-                    <span>Code</span>
+                    Code
                   </a>
                   <a
                     href={project.live}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1 px-3 py-1.5 bg-purple-500 rounded-lg text-sm text-white hover:bg-purple-600 transition-colors"
+                    className="flex items-center gap-1 px-3 py-2 bg-purple-500 rounded-lg text-sm text-white hover:bg-purple-700 transition-colors"
                   >
                     <ExternalLink className="h-4 w-4" />
-                    <span>Demo</span>
+                    Demo
                   </a>
                 </div>
               </div>
