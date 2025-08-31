@@ -10,7 +10,7 @@ const projects = [
       "Full-featured e-commerce platform (MERN): including authentication, admin dashboard, cart management, product catalog, OLX marketplace, Cloudinary uploads, and a mystery box feature.",
     image: SwiftMart,
     technologies: ["MongoDB", "Express.js", "React", "Node.js", "Cloudinary"],
-    github: "https://github.com/krrish-singhal/Swift-Mart", // Replace with actual link
+    github: "https://github.com/krrish-singhal/My_Swift_Mart.git", // Replace with actual link
     
     icon: ShoppingCart,
   },
@@ -20,7 +20,7 @@ const projects = [
       "A productivity application for managing and categorizing tasks (To-Do, In Progress, Done); features authentication, editing, persistent storage, and clean dashboard.",
     image: Taskify,
     technologies: ["MERN", "JWT", "MongoDB"],
-    github: "https://github.com/krrish-singhal/Taskify",
+    github: "https://github.com/krrish-singhal/My_Taskify.git",
     live: "https://taskify-142w85e2t-krrish-singhals-projects.vercel.app", // Demo link
     icon: Github,
   },
@@ -40,7 +40,7 @@ const projects = [
       "A feature-rich e-commerce cart built with Next.js and JavaScript. Includes seamless browsing, cart management, authentication, and a dynamic checkout process.",
     image: CravingCart,
     technologies: ["Next.js", "JavaScript"],
-    github: "https://github.com/krrish-singhal/craving-cart",
+    github: "https://github.com/krrish-singhal/Craving-cart.git",
     live: "https://craving-cart.vercel.app/",
     icon: ShoppingCart,
   },
