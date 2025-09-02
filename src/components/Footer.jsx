@@ -40,7 +40,7 @@ function Footer() {
               collaborations.
             </p>
             <a
-              href="https://drive.google.com/file/d/1Q8b1nJQjsdIig7cfi8wCtjbpDlEk5aJ0/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1pqHJHHRHS5aajZ6o5WjwuC5YiOjXvFnz/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all duration-300 text-white"
