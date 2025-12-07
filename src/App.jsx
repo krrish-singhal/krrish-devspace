@@ -8,11 +8,10 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
 import Education from './components/Education';
+import Experience from './components/Experience';
 import Projects from './components/Projects';
-import ContactSection from './components/Contact'; // inline contact section on homepage
-import Footer from './components/Footer';
+import ContactSection from './components/Contact';
 import Navbar from './components/Navbar';
-import ContactPage from './components/ContactPage'; // full contact page (your file)
 
 import './index.css';
 
@@ -30,27 +29,15 @@ function App() {
       <Route
         path="/"
         element={
-          <div className="w-screen">
+          <div className="w-screen bg-white">
             <Navbar />
             <Hero />
             <About />
-            <Education />
             <Skills />
+            <Education />
+            <Experience />
             <Projects />
             <ContactSection />
-            <Footer />
-          </div>
-        }
-      />
-
-      {/* Contact page route */}
-      <Route
-        path="/contact"
-        element={
-          <div className="w-screen">
-            <Navbar />
-            <ContactPage />
-            <Footer />
           </div>
         }
       />

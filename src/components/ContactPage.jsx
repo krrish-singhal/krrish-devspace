@@ -23,8 +23,8 @@ function Contact() {
     {
       icon: Mail,
       title: "Email",
-      value: "krrishsinghal62@gmail.com",
-      link: "mailto:krrishsinghal62@gmail.com"
+      value: "krrishsinghal22@gmail.com",
+      link: "mailto:krrishsinghal22@gmail.com"
     },
     {
       icon: Phone,
