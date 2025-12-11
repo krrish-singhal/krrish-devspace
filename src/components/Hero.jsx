@@ -67,7 +67,7 @@ function Hero() {
             {/* Buttons and Social Links */}
             <div className="flex flex-wrap items-center gap-4 pt-4">
               <a
-                href="https://drive.google.com/file/d/1pqHJHHRHS5aajZ6o5WjwuC5YiOjXvFnz/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1TL7fdFJPmjYlshj1fQZhq-DskbqOXDXI/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#3cf26f] to-[#2dd15f] text-white rounded-full font-medium hover:from-[#2dd15f] hover:to-[#3cf26f] transition-all duration-300 shadow-lg hover:shadow-xl"

@@ -37,7 +37,7 @@ function About() {
                 Currently pursuing B.Tech in Computer Science and Engineering at KIET, Ghaziabad. I specialize in full-stack web development with React, Node.js, and modern web technologies. Proficient in JavaScript, Python, and building scalable web applications.
               </p>
               <p>
-                Passionate about creating impactful digital products and innovative web solutions. Experienced in developing responsive and user-friendly web applications with modern frameworks and best practices.
+                Passionate about creating impactful digital products and innovative web solutions. Experienced in developing responsive and user-friendly web applications and mobile applications with modern frameworks and best practices.
               </p>
               <p>
                 Always eager to learn new technologies and take on challenging projects that push the boundaries of web development. Committed to writing clean, maintainable code and delivering exceptional user experiences.
