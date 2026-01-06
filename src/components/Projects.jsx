@@ -3,6 +3,7 @@ import { Github, ExternalLink, Star } from 'lucide-react';
 import SwiftMart from '../assets/image.png';
 import Taskify from '../assets/Taskify.png';
 import CravingCart from '../assets/Craving_cart_image.png';
+import OrbixImage from '../assets/Orbix.png';
 
 const projects = [
   {
@@ -42,6 +43,16 @@ const projects = [
     technologies: ["React", "Node.js", "MongoDB"],
     github: "https://github.com/krrish-singhal/Blog_With_Blofify.git",
     live: "https://blog-with-blofify.vercel.app/",
+    category: "web",
+    featured: true,
+  },
+  {
+    title: "Orbix",
+    description: "A modern and dynamic web application featuring seamless user experience and contemporary design patterns.",
+    image: OrbixImage,
+    technologies: ["React", "Tailwind CSS", "Vercel"],
+    github: "https://github.com/krrish-singhal/Orbix_Frontend-",
+    live: "https://orbix-frontend.vercel.app/",
     category: "web",
     featured: true,
   },
