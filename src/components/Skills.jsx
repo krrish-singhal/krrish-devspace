@@ -5,14 +5,7 @@ function Skills() {
   const [activeTab, setActiveTab] = useState("technical");
 
   const technicalSkills = [
-    {
-      name: "Flutter",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg",
-    },
-    {
-      name: "Dart",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg",
-    },
+   
     {
       name: "React",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
