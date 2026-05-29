@@ -1,23 +1,46 @@
-import { Briefcase, Calendar, MapPin } from 'lucide-react';
+import { FaBriefcase, FaCalendarAlt, FaMapMarkerAlt } from 'react-icons/fa';
 
 function Experience() {
   const experiences = [
     {
-      title: 'React Native Developer (Paid Intern)',
-      company: 'Vinkura AI',
-      duration: 'August 2024 - September 2024 (1 month)',
+      title: 'Remote Software Engineer',
+      company: 'Make With Us',
+      role: 'Full Stack Developer',
+      duration: 'Current Role',
       location: 'Remote',
-      description: 'Worked on developing and maintaining React Native mobile applications. Collaborated with the team to implement new features and improve app performance.',
-      technologies: ['React Native', 'JavaScript', 'Firebase', 'Git']
+      description:
+        'Working remotely on full-stack product development, converting business requirements into stable user-facing features and backend workflows for active products.',
+      highlights: [
+        'Collaborate with distributed teams on planning, implementation, testing, and release readiness.',
+        'Improve product reliability, user flows, API communication, and maintainability across live applications.',
+      ],
     },
     {
-      title: 'Freelance Full Stack Developer',
-      company: 'Freelance Project',
-      duration: '2024',
+      title: 'React Native and Node.js Developer Intern',
+      company: 'White Mirror Solutions Private Limited',
+      role: 'Software Development Intern',
+      duration: 'Internship',
       location: 'Remote',
-      description: 'Developed a comprehensive CRM (Customer Relationship Management) application from scratch. Implemented features for customer management, sales tracking, and analytics dashboard.',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Express.js', 'Tailwind CSS']
-    }
+      description:
+        'Contributed to mobile and backend feature development while working with the team on implementation, issue fixing, and delivery-focused improvements.',
+      highlights: [
+        'Built and refined application screens, server-side flows, authentication logic, and data handling.',
+        'Supported debugging, performance improvements, and clean handoff of completed modules.',
+      ],
+    },
+    {
+      title: 'React Native Developer Intern',
+      company: 'Vinkura AI',
+      role: 'Mobile App Development Intern',
+      duration: 'Internship',
+      location: 'Remote',
+      description:
+        'Developed user-facing mobile app flows for an astrology and consultation product, focusing on smooth onboarding, chat interaction, and secure user access.',
+      highlights: [
+        'Worked on consultation-driven experiences, personalized content delivery, and customer-facing journeys.',
+        'Coordinated with the team to improve usability, app stability, and feature completeness.',
+      ],
+    },
   ];
 
   return (
@@ -29,7 +52,7 @@ function Experience() {
             My <span className="text-[#3cf26f]">Experience</span>
           </h2>
           <p className="text-gray-600 text-lg max-w-3xl mx-auto">
-            Professional journey and key projects
+            Professional roles, responsibilities, and hands-on product delivery.
           </p>
         </div>
 
@@ -44,7 +67,7 @@ function Experience() {
                 {/* Icon */}
                 <div className="flex-shrink-0">
                   <div className="w-16 h-16 bg-gradient-to-br from-[#3cf26f] to-[#2dd15f] rounded-2xl flex items-center justify-center">
-                    <Briefcase className="w-8 h-8 text-white" />
+                    <FaBriefcase className="w-8 h-8 text-white" />
                   </div>
                 </div>
 
@@ -53,36 +76,36 @@ function Experience() {
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">
                     {exp.title}
                   </h3>
-                  <p className="text-[#3cf26f] font-semibold text-lg mb-3">
+                  <p className="text-[#3cf26f] font-semibold text-lg">
                     {exp.company}
+                  </p>
+                  <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-gray-500">
+                    {exp.role}
                   </p>
                   
                   <div className="flex flex-wrap gap-4 mb-4">
                     <div className="flex items-center gap-2 text-gray-600">
-                      <Calendar className="w-4 h-4" />
+                      <FaCalendarAlt className="w-4 h-4" />
                       <span>{exp.duration}</span>
                     </div>
                     <div className="flex items-center gap-2 text-gray-600">
-                      <MapPin className="w-4 h-4" />
+                      <FaMapMarkerAlt className="w-4 h-4" />
                       <span>{exp.location}</span>
                     </div>
                   </div>
 
-                  <p className="text-gray-600 leading-relaxed mb-4">
+                  <p className="text-gray-600 leading-relaxed">
                     {exp.description}
                   </p>
 
-                  {/* Technologies */}
-                  <div className="flex flex-wrap gap-2">
-                    {exp.technologies.map((tech, techIndex) => (
-                      <span
-                        key={techIndex}
-                        className="px-3 py-1 bg-white text-gray-700 rounded-full text-sm font-medium border border-gray-200"
-                      >
-                        {tech}
-                      </span>
+                  <ul className="mt-4 space-y-2 text-gray-600">
+                    {exp.highlights.map((highlight) => (
+                      <li key={highlight} className="flex gap-3">
+                        <span className="mt-2 h-2 w-2 flex-shrink-0 rounded-full bg-[#3cf26f]" />
+                        <span>{highlight}</span>
+                      </li>
                     ))}
-                  </div>
+                  </ul>
                 </div>
               </div>
             </div>

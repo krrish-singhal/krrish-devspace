@@ -1,4 +1,4 @@
-import { GraduationCap, Calendar, MapPin } from 'lucide-react';
+import { FaCalendarAlt, FaGraduationCap, FaMapMarkerAlt } from 'react-icons/fa';
 
 function Education() {
   const education = [
@@ -39,7 +39,7 @@ function Education() {
               <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                 <div className="flex items-center gap-4 mb-4 md:mb-0">
                   <div className="h-14 w-14 bg-gradient-to-br from-[#3cf26f] to-[#2dd15f] rounded-full flex items-center justify-center shadow-lg">
-                    <GraduationCap className="h-7 w-7 text-white" />
+                    <FaGraduationCap className="h-7 w-7 text-white" />
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-gray-900">{edu.degree}</h3>
@@ -48,11 +48,11 @@ function Education() {
                 </div>
                 <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-6 text-gray-600">
                   <div className="flex items-center gap-2">
-                    <Calendar className="h-4 w-4 text-[#3cf26f]" />
+                    <FaCalendarAlt className="h-4 w-4 text-[#3cf26f]" />
                     <span>{edu.duration}</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <MapPin className="h-4 w-4 text-[#3cf26f]" />
+                    <FaMapMarkerAlt className="h-4 w-4 text-[#3cf26f]" />
                     <span>{edu.location}</span>
                   </div>
                 </div>

@@ -1,4 +1,9 @@
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import {
+  FaEnvelope as Mail,
+  FaMapMarkerAlt as MapPin,
+  FaPaperPlane as Send,
+  FaPhone as Phone,
+} from 'react-icons/fa';
 import { useState } from 'react';
 
 function Contact() {

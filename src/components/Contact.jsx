@@ -1,5 +1,17 @@
 import { useState, useEffect } from 'react';
-import { Mail, MapPin, Send, Github, Linkedin, Twitter, Instagram, MessageCircle, X, CheckCircle, AlertCircle } from 'lucide-react';
+import {
+  FaCheckCircle as CheckCircle,
+  FaEnvelope as Mail,
+  FaExclamationCircle as AlertCircle,
+  FaGithub as Github,
+  FaInstagram as Instagram,
+  FaLinkedinIn as Linkedin,
+  FaMapMarkerAlt as MapPin,
+  FaPaperPlane as Send,
+  FaTimes as X,
+  FaTwitter as Twitter,
+  FaWhatsapp as MessageCircle,
+} from 'react-icons/fa';
 
 function Contact() {
   const [formData, setFormData] = useState({
