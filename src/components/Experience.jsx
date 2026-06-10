@@ -56,7 +56,7 @@ function Experience() {
           </p>
         </div>
 
-        {/* Experience Timeline */}
+
         <div className="space-y-8">
           {experiences.map((exp, index) => (
             <div
