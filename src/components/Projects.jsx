@@ -24,7 +24,7 @@ const projectSections = [
         title: 'DKJU ERP System',
         period: 'Mar 2026 - Present',
         icon: FaServer,
-        visual: 'bg-gradient-to-br from-slate-900 via-blue-900 to-emerald-700',
+        image: '/dkju.png',
         description:
           'Developed and maintained a large-scale education ERP platform managing admissions, student records, fee management, academic tracking, transfer processes, and institutional administration across South India.',
         tags: ['40K+ live users', 'Admissions', 'Fees', 'Academic tracking', 'Administration'],
@@ -34,7 +34,7 @@ const projectSections = [
         title: 'CrewHive',
         period: 'Apr 2026 - Present',
         icon: FaWhatsapp,
-        visual: 'bg-gradient-to-br from-emerald-700 via-green-600 to-slate-900',
+        image: '/crewhive.png',
         description:
           'Developed an automated WhatsApp-based platform powered by a self-coded bot system to provide rural and village-level employment opportunities through automated communication and task distribution.',
         tags: ['WhatsApp Automation', 'APIs', 'Backend Systems', 'Rural Employment'],
@@ -44,7 +44,7 @@ const projectSections = [
         title: 'TicketLelo',
         period: 'Mar 2023',
         icon: FaTicketAlt,
-        visual: 'bg-gradient-to-br from-indigo-800 via-purple-700 to-rose-600',
+        image: '/ticketlelo.png',
         description:
           'Built an end-to-end event and ticket management ecosystem where organizers can host, manage, approve, and execute events with custom forms, payments, email automation, and dashboards.',
         tags: ['Next.js', 'Payment Gateway', 'Role-Based Access', 'Email Automation'],
@@ -83,29 +83,19 @@ const projectSections = [
         title: 'Shop Matrix',
         period: '2025',
         icon: FaShoppingBag,
-        visual: 'bg-gradient-to-br from-purple-600 via-pink-600 to-orange-500',
+        image: '/shop_matrix.png',
         description:
           'Full-stack e-commerce platform with product catalog, shopping cart, secure checkout, payment integration, order tracking, and inventory management system.',
         tags: ['MERN Stack', 'Shopping Cart', 'Payment Integration', 'Inventory'],
         github: 'https://github.com/krrish-singhal/shop-matrix',
         live: 'https://shop-matrix.vercel.app',
       },
-      {
-        title: 'Taskify',
-        period: '2025',
-        icon: FaUsersCog,
-        visual: 'bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-500',
-        description:
-          'Build a task management application with drag-and-drop functionality, real-time collaboration, task prioritization, deadline tracking, team management, and comprehensive dashboards.',
-        tags: ['React', 'Node.js', 'MongoDB', 'Real-time Updates'],
-        github: 'https://github.com/krrish-singhal/taskify',
-        live: 'https://taskify-app.vercel.app',
-      },
+
       {
         title: 'Craving Cart',
         period: '2024',
         icon: FaShoppingBag,
-        visual: 'bg-gradient-to-br from-orange-600 via-red-600 to-pink-500',
+        image: '/craving-cart.png',
         description:
           'Food delivery web application with restaurant browsing, menu management, real-time order tracking, payment processing, user reviews, ratings, and delivery notifications.',
         tags: ['MERN Stack', 'Food Delivery', 'Real-time Tracking', 'Payment Gateway'],
